@@ -227,13 +227,13 @@ int main()
 	map<string, double> Bigram_Freq_In = Frequency(text.length() - 1, bigram_in);
 
 	// частота биграм в тексте без пробелов и с пересечениями
-	map<string, double> Bigram_Freq_In_WS = Frequency(text.length() - 1, bigram_in_ws);
+	map<string, double> Bigram_Freq_In_WS = Frequency(text_ws.length() - 1, bigram_in_ws);
 
 	// частота биграм в тексте с пробелами и без пересечений
 	map<string, double> Bigram_Freq_WIn = Frequency(text.length() / 2, bigram_win);
 
 	// частота биграм в тексте без пробелов и без пересечений
-	map<string, double> Bigram_Freq_WIn_WS = Frequency(text.length() / 2, bigram_win_ws);
+	map<string, double> Bigram_Freq_WIn_WS = Frequency(text_ws.length() / 2, bigram_win_ws);
 
 
 
